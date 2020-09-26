@@ -1,9 +1,9 @@
-const herois = require('../model/acervoHerois.json');
+const linguagens = require('../model/acervoLinguagens.json');
 
 const getAll = (req, res) => {
     console.log(req.url);
 
-    res.send(herois);
+    res.send(linguagens);
 };
 
 module.exports = { getAll };
