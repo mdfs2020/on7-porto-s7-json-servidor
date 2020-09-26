@@ -1,9 +1,9 @@
-const literatura = require('../model/acervoLiterario.json');
+const musica = require('../model/acervoMusical.json');
 
 const getAll = (req, res) => {
     console.log(req.url);
 
-    res.send(literatura);
+    res.send(musica);
 };
 
 module.exports = { getAll };
