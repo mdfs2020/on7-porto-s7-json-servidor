@@ -1,9 +1,9 @@
-const carros = require('../model/acervoRetroCars.json');
+const series = require('../model/acervoSeries.json');
 
 const getAll = (req, res) => {
     console.log(req.url);
 
-    res.send(carros);
+    res.send(series);
 };
 
 module.exports = { getAll };
