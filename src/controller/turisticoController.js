@@ -1,9 +1,9 @@
-const series = require('../model/acervoSeries.json');
+const turismo = require('../model/acervoTuristico.json');
 
 const getAll = (req, res) => {
     console.log(req.url);
 
-    res.send(series);
+    res.send(turismo);
 };
 
 module.exports = { getAll };
