@@ -4,7 +4,8 @@ const app = express();
 // importar os arquivos de rota
 
 const index = require('./route/index');
-const cafeterias = require('./route/cafeteriasRoute');
+const escritores = require('./route/escritoresLatinoAmericanosRoute');
+
 
 app.use((req, res, next) => {
     console.log('Nova requisição realizada');
@@ -13,6 +14,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/', index);
-app.use('/cafeterias', cafeterias);
+app.use('/escritoresLatinoAmericanos', escritores);
 
 module.exports = app;
