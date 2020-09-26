@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controller/gastronomicoController')
+const controller = require('../controller/heroisController')
 
 router.get("/", controller.getAll);
-router.get("/gastronomico", controller.getAll);
+router.get("/herois", controller.getAll);
 
 module.exports = router;
