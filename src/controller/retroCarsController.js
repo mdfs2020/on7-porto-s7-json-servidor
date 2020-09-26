@@ -1,9 +1,9 @@
-const musica = require('../model/acervoMusical.json');
+const carros = require('../model/acervoRetroCars.json');
 
 const getAll = (req, res) => {
     console.log(req.url);
 
-    res.send(musica);
+    res.send(carros);
 };
 
 module.exports = { getAll };
